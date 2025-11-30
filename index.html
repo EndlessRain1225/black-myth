@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑神话:悟空</title>
+    <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+     <audio id="backgroundAudio" src="audio/background-music.mp3" loop></audio>
+
+  
+  
+
+  <script>
+    // 获取音频元素
+    const audio = document.getElementById('backgroundAudio');
+
+    // 尝试自动播放，如果浏览器不允许，则需要用户交互触发播放
+    audio.play().catch(e => {
+      console.log('自动播放被阻止，需要用户交互才能播放。');
+      // 这里可以添加用户交互事件监听器，例如点击页面某处触发播放
+      document.body.addEventListener('click', () => {
+        audio.play();
+      }, { once: true }); // once: true 表示该事件监听器只触发一次
+    });
+  </script>
+   
+    
+    <header>
+   
+    <h1>黑神话:悟空</h1>
+    <nav>
+    <ul>
+        <li><a href="#">背景简介</a></li>
+        <li><a href="#">地图全貌</a></li>
+        <li><a href="#">人物一览</a></li>
+        <li><a href="#">技能流派</a></li>                
+    </ul>
+    </nav>  
+    </header>   
+    <main>
+
+    <section class="news">
+    <h2>2024.8.20   直面天命</h2>
+    <p>“踏上取经路<br>比抵达灵山更重要”</p>
+    
+    </section>
+
+    <section class="slogan">
+    <blockquote>" 烟霞缥缈随来往,寒暑无侵不记年。<br> 怕什么山高路险，自往前"</blockquote>
+    </section>
+    
+    <section class="shop">
+    <img src="images/wukong4.png" alt="  黑神话-悟空">
+    <div class="info">
+    <h2>你们一定都听说过一只猴子的事情</h2>
+    <p>有人说，<br>
+       他帮唐僧取到了真经，<br>
+    封了斗战圣佛，从此留在了灵山,<br>
+也有人说，,<br>
+那个成佛的根本不是他，<br>
+真正的他，早就死在了西行路上。<br>
+还有人说，西游从未发生过。<br>
+他只不过是说书人杜撰的一只，猴子！<br>
+但我讲的故事，<br>你们一定没有听说过。<br>故事还要从一只金蝉说起.......</p>
+    </div>
+    </section>
+
+ <section class="shop1">
+    <div class="info1">
+    <h2>你说这世上是善人多，还是恶人多？</h2>
+    <p>自是善人多。<br>
+       那为何这世道从未太平，<br>
+    恶人总是横行无忌？<br>
+因为不分好歹的善，<br>
+不是善，是恶的帮凶。<br>
+以霹雳手段，显菩萨心肠，,<br>
+这就是你的，天命。</p>
+    </div>
+    <img src="images/wuqi1.jpg" alt="黑神话-悟空">
+    
+    </section>
+
+
+    <section class="product">
+        <p>敢问路在何方，<br>路在脚下</p>
+    </section>
+    
+    <section class="newsletter">
+        <p>8月20日，我们一起放马西行，直面天命。</p>
+       
+    </section>
+    </main>
+    <footer>
+        <p>开发商：@Game Science</p>
+    </footer>
+</body>
+</html>
